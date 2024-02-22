@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Title</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://open-source.extive.eu/micro-interaction-theme.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+    * {
+        margin: 2px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #header {
+        background-color: cyan;
+        text-align: center;
+        height: 100px;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    div.grid_items {
+        margin: auto;
+        margin-bottom: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid lightskyblue;
+        text-align: left;
+        background-color: lightskyblue;
+    }
+
+    div.grid_items:hover {
+        background-color: lightgray;
+    }
+
+    body {
+        background-color: powderblue;
+    }
+
+    .spacer {
+        height: 10px;
+    }
+
+    h1 h2 {
+        text-align: center;
+        color: red;
+    }
+
+    img {
+        margin: 5px;
+        height: 35px;
+    }
+
+    input {
+        display: none;
+    }
+
+    li.search:hover input{
+        display: block;
+    }
+
+    input:active {
+        display: block;
+    }
+
+    div.header::first-letter {
+        font-family: Arial, Helvetica, sans-serif;
+        size: 20;
+        color: rebeccapurple;
+    }
+
+    div img {
+        width: 40px;
+        height: 40px;
+        
+    }
+
+</style>
+
+</head>
+
+<body>
+    <div class="header">
+        Welcome to AnimeCart, find all of your favourite anime merchandises here.
+    </div>
+    
+    <ul>
+        <li>
+            <img src="moon-element.png" alt="">
+        </li>
+        <li> 
+            <a href="#Home"> Home </a>
+         </li>
+        <li> 
+            <a href="#Orders"> Orders </a>
+        </li>
+        <li> 
+            <a href="#Cart"> Cart </a>
+        </li>
+
+
+        <li style="float: right;">  
+            <a class="active" href="#about">About</a>
+        </li>
+        <li style="float: right;" class="search"> 
+            <a href="">Search</a> 
+            <input type="text" name="Search" id="">
+        </li>
+    </ul>
+
+    <div class="spacer"></div>
+
+    <div class="flex-container">
+        <div>
+            <div class="grid_items">
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+            <div class="grid_items">
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+            <div class="grid_items" >
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="grid_items" >
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+            <div class="grid_items" >
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+            <div class="grid_items" >
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="grid_items" >
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+            <div class="grid_items" >
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+            <div class="grid_items">
+                <img src="moon-element.png" alt="">
+                <p>
+                    Rasengan <br>
+                    price: <b>$20.00</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: lightgoldenrodyellow;">
+        <span>
+            Gender
+            <select name="gender" id="gender">
+                <option value="male"> Male </option>
+                <option value="female"> Female </option>
+            </select>
+
+            <span>
+                Category
+                <select name="category" id="category">
+                    <option value="cloths"> cloths </option>
+                    <option value="toys"> Toys </option>
+                    <option value="poster"> Poster </option>
+                    <option value="magazine"> Magazine </option>
+                </select>
+            </span>
+        </span>
+    </div>
+
+    <div class="footer">
+        <div style="display: inline-block; text-align: left;">
+            &copy; All right reserved with AnimeCart. <br><br>
+            Contact us: <br>
+            email: 
+                <a href="mailto:email: AnimeCart@cartanime.org">AnimeCart@cartanime.org</a> <br>
+            Phone: 
+                <a href="tel:18000-8928291">18000-8928291</a>
+        </div>
+    </div>
+</body>
+
+</html>
